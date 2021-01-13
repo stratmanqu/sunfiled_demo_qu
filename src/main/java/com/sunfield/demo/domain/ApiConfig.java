@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class ApiConfig {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class User {
 
     private String name;
 
-    private String email;
+    private Integer num;
 
     public Integer getId() {
         return id;
@@ -34,12 +34,11 @@ public class User {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public Integer getNum() {
+        return num;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNum(Integer num) {
+        this.num = num;
     }
-
 }
