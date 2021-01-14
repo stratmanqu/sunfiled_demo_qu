@@ -41,4 +41,5 @@ public class ApiConfig {
     public void setNum(Integer num) {
         this.num = num;
     }
+
 }
